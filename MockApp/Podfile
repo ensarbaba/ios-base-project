@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '10.0'
+
+target 'MockApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+ 
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'SwiftyJSON'
+  pod 'AloeStackView'
+  pod 'SnapKit'
+  pod 'SwiftLint'
+  pod 'Bagel'
+  pod 'R.swift' 
+  pod 'SVProgressHUD'  
+  pod 'Reusable', '~> 4.0'
+  pod 'Fabric'
+  pod 'Crashlytics' 
+
+  # Pods for MockApp
+
+  target 'MockAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MockAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
