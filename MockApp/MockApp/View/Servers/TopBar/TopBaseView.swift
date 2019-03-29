@@ -24,15 +24,10 @@ class TopBaseView: UIView {
         self.backgroundColor = .white
         self.layer.borderColor = UIColor.mockGray.cgColor
         self.layer.borderWidth = 1.0
-        
         self.layer.shadowOffset = CGSize(width: 0, height: 3)
-//        self.layer.shadowRadius = 1
         self.layer.shadowOpacity = 0.6
         self.layer.shadowRadius = 3.0
         self.layer.shadowColor = UIColor.gray.cgColor
-
-
-        
         self.snp.makeConstraints({ (make) in
             make.height.equalTo(80)
         })
